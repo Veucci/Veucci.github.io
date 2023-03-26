@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --color-body: white;
+    --color-header: white;
+    --color-main: #333333;
+    --color-base2: #111111;
+    --color-theme: #bf0000;
+    --color-theme2: #444444;
+    --sidebar-width: 280px;
+    --font-base: "Ubuntu";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-header);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-theme);
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: var(--color-theme);
+}
+
+.bg-base {
+    background-color: var(--color-main);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-theme);
+}
+
+.icon-div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-theme);
+    color: var(--color-main);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-base2);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-theme);
+}
+
+.navbar .nav-link.active {
+    color: var(--color-theme);
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background-color: var(--color-base2);
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
+}
+
+/* BTN */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-theme);
+    border-color: var(--color-theme);
+    color: white;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-theme2);
+    color: floralwhite;
+    border-color: var(--color-theme2);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-theme);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+    background-color: var(--color-main);
+    border-color: var(--color-header);
+    color: var(--color-body);
+}
+
+#contact .form-control:focus {
+    border-color: var(--color-theme);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: var(--color-body);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons a {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-main);
+    border-radius: 100px;
+    font-size: 40px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.review-name {
+    margin-top: -20px;
+}
+
+.review-company {
+    margin-top: -10px;
+    margin-left: 60px;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-theme);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--color-theme);
+    border-radius: 10px;
+  }
+
+section {
+    display: flex;
+    align-items: center;
+}
