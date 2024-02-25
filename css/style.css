@@ -4,7 +4,8 @@
     --color-body: white;
     --color-header: white;
     --color-main: #333333;
-    --color-base2: #111111;
+    --color-base: radial-gradient(ellipse at center, #04213d 5%, #0c0d13 50%);
+    --animation-duration: 10s;
     --color-theme: #bf0000;
     --color-theme2: #444444;
     --sidebar-width: 280px;
@@ -12,7 +13,9 @@
 }
 
 body {
-    background-color: var(--color-base2);
+    background: var(--color-base);
+    background-size: 300% 300%; 
+    animation: moveColors var(--animation-duration) infinite alternate;
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
     text-decoration: none;
@@ -74,11 +77,6 @@ img {
     color: var(--color-main);
 }
 
-/* NAVBAR */
-.navbar {
-    background-color: var(--color-base2);
-}
-
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
@@ -97,7 +95,6 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidebar-width);
-        background-color: var(--color-base2);
         background-size: cover;
         background-position: center;
     }
@@ -230,3 +227,12 @@ section {
     display: flex;
     align-items: center;
 }
+
+@keyframes moveColors {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }

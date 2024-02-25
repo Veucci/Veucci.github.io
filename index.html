@@ -71,11 +71,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">Welcome to <span class="text-brand">My Portfolio</span></h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Hi, I'm Efe Özkan, a web developer experienced in Python, HTML, CSS, and Photoshop. I create user-friendly and creative websites. Check out my portfolio to see my recent projects and contact me to learn more.</p>
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">Hi, I'm Efe</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">A student majoring in Artificial Intelligence. I enjoy building websites & apps that showcase the intersection of tech and creativity.</p>
+                        <p class="mt-2 mb-4" data-aos="fade-up" data-aos-delay="350">
+                            In 2021, I embarked on my coding journey, venturing into the programming realm with Python. Evolving my skills, I delved into databases and web development, mastering HTML and CSS. This journey ignited a passion, steering me toward the exciting domain of full-stack development.
+                      
+                            Currently, I'm actively refining my full-stack skills, concurrently immersing myself in the realms of <a className="font-medium transition hover:text-primary" href="https://react.dev/" target="_blank">React</a> for dynamic user interfaces, <a className="font-medium transition hover:text-primary" href="https://www.mongodb.com" target="_blank">MongoDB</a> for efficient database management, and <a className="font-medium transition hover:text-primary" href="https://huggingface.co" target="_blank">Hugging Face</a> for cutting-edge natural language processing in AI. My projects seamlessly integrate these technologies, showcasing a harmonious blend of coding and AI.
+                      
+                            Amidst my coding endeavors, I'm pursuing a degree in Management Information Systems at <a className="font-medium transition hover:text-primary" href="https://altinbas.edu.tr" target="_blank">Altinbas University</a>. This academic pursuit provides me with a holistic understanding of the dynamic intersection between technology and business.
+                      
+                            Explore some of my work in full-stack development and artificial intelligence on my <a className="font-medium transition hover:text-primary" href="https://github.com/Veucci" target="_blank">Github</a>.
+                        </p>
                         <div data-aos="fade-up" data-aos-delay="600">
                             <a href="#skills" class="btn btn-brand me-3">My Skills</a>
                             <a href="#projects" class="btn btn-brand me-3">My Projects</a>
+                            <a href="/EfeOzkan.pdf" class="btn btn-brand me-3" target="_blank">My Resume</a>
                         </div>
                     </div>
                 </div>
@@ -97,25 +107,27 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-md-4" data-aos="fade-right">
+                    <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="icon-div rounded-4">
+                                <i class="las la-swatchbook"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Artificial Intelligence</h5>
+                            <p>I focus on creating smart solutions and achieving great results by developing models and using artificial intelligence.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="icon-div rounded-4">
                                 <i class="las la-terminal"></i>
                             </div>
                             <h5 class="mt-4 mb-2">Programming</h5>
-                            <p>Expert in Python, delivering efficient solutions and exceptional results.</p>
+                            <p>I deliver effective solutions and achieve outstanding results through the use of Python.</p>
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="icon-div rounded-4">
-                                <i class="las la-swatchbook"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">Designing</h5>
-                            <p>Designer crafting visually appealing experiences.</p>
-                        </div>
-                    </div>
+
 
                     <div class="col-md-4" data-aos="fade-left" data-aos-delay="600">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
@@ -123,7 +135,7 @@
                                 <i class="las la-laptop-code"></i>
                             </div>
                             <h5 class="mt-4 mb-2">Web Designing</h5>
-                            <p>Web design master crafting visually appealing solutions.</p>
+                            <p>Crafting user-friendly websites and achieving impressive results drive my efforts, emphasizing continuous improvement in design and the latest web technologies.</p>
                         </div>
                     </div>
                 </div>
@@ -145,10 +157,10 @@
                 <div class="row gy-5">
                     <div class="col-lg-6">
 
-                        <h3 class="mb-4" data-aos="fade-right" data-aos-delay="300">Education</h3>
+                        <h3 class="mb-4" data-aos="fade-right" data-aos-delay="200">Education</h3>
                         <div class="row gy-4">
 
-                            <div class="col-12" data-aos="fade-right" data-aos-delay="600">
+                            <div class="col-12" data-aos="fade-right" data-aos-delay="300">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>Management Information Systems</h4>
                                     <p class="text-brand mb-2">Altinbas University, Istanbul</p>
@@ -181,6 +193,32 @@
                     <div class="col-md-6" data-aos="fade-right">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./images/turkish-lyric-to-genre.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Turkish Lyrics Genre Classification Model</h4>
+                                <p>The model was trained using the BERT language model on my song lyrics dataset to predict the genre of a given song based on its lyrics.</p>
+                                <a href="https://huggingface.co/Veucci/turkish-lyric-to-genre" target="_blank" class="link-custom">Let me see!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./images/lyrics-to-genre.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Lyrics Genre Classification Model</h4>
+                                <p>The model was trained using the BERT language model on my song lyrics dataset to predict the genre of a given song based on its lyrics. </p>
+                                <a href="https://huggingface.co/Veucci/lyric-to-genre" target="_blank" class="link-custom">Let me see!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
                                 <img class="rounded-4" src="./images/tv.png" alt="">
                             </div>
                             <div class="card-custom-content p-4">
@@ -204,31 +242,6 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6" data-aos="fade-right">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/veuccinsta.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Veuccinsta</h4>
-                                <p>An instagram clone for my instagram account.</p>
-                                <a href="https://veuccinsta.onrender.com/app" target="_blank" class="link-custom">Let me see!</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./images/portfolio.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Portfolio</h4>
-                                <p>Minimalist portfolio website template for artists and creatives.</p>
-                                <a href="./index.html" class="link-custom">Let me see!</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -252,10 +265,9 @@
                     <div class="row gy-4 justify-content-between">
                         <div class="col-auto">
                             <div class="social-icons">
-                                <a href="https://twitter.com/VeucciT" target="_blank"><i class="lab la-twitter"></i></a>
-                                <a href="https://www.instagram.com/lytcial" target="_blank"><i class="lab la-instagram"></i></a>
+                                <a href="mailto:efe.ozkan732@gmail.com" target="_blank"><i class="las la-envelope"></i></a>
                                 <a href="https://github.com/Veucci" target="_blank"><i class="lab la-github"></i></a>
-                                <a href="https://www.linkedin.com/in/efe-%C3%B6zkan-965979257" target="_blank"><i class="lab la-linkedin"></i></a>    
+                                <a href="https://www.linkedin.com/in/efe-%C3%B6zkan" target="_blank"><i class="lab la-linkedin"></i></a>    
                             </div>
                         </div>
                     </div>
